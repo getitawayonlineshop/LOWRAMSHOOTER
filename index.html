@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOWRAMSHOOTER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas für das Spiel -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+    <!-- Initialisiere Firebase -->
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyCy11LIlUTXHS29_pWW01MjLY0svNhE7D0",
+  authDomain: "lowramshooter.firebaseapp.com",
+  projectId: "lowramshooter",
+  storageBucket: "lowramshooter.appspot.com",
+  messagingSenderId: "949950970973",
+  appId: "1:949950970973:web:5fb0e773b3503bdb6c21b4",
+  measurementId: "G-23YH440CYF"
+};
+
+      // Firebase initialisieren
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Hauptspiel-JavaScript -->
+    <script src="map.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
